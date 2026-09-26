@@ -5,8 +5,7 @@ if (isset($_POST['submit'])) {
   $jurusan = $_POST['jurusan'];
   $angkatan = $_POST['angkatan'];
 
-  $sql = "INSERT INTO mahasiswa (nama, jurusan, angkatan) VALUES ('$nama','$jurusan','$angkatan')";
-  mysqli_query($conn, $sql);
+  mysqli_query($conn, "INSERT INTO mahasiswa (nama, jurusan, angkatan) VALUES ('$nama','$jurusan','$angkatan')");
   header("Location: index.php");
 }
 ?>

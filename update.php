@@ -9,8 +9,7 @@ if (isset($_POST['submit'])) {
   $jurusan = $_POST['jurusan'];
   $angkatan = $_POST['angkatan'];
 
-  $sql = "UPDATE mahasiswa SET nama='$nama', jurusan='$jurusan', angkatan='$angkatan' WHERE id=$id";
-  mysqli_query($conn, $sql);
+  mysqli_query($conn, "UPDATE mahasiswa SET nama='$nama', jurusan='$jurusan', angkatan='$angkatan' WHERE id=$id");
   header("Location: index.php");
 }
 ?>

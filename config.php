@@ -1,7 +1,7 @@
 <?php
 $host = "localhost";
 $user = "root";
-$pass = "";
+$pass = "passwordBaruSQLSam";
 $db   = "tugas_paw";
 
 $conn = mysqli_connect($host, $user, $pass, $db);
